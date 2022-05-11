@@ -1,0 +1,98 @@
+.skills {
+    background: linear-gradient(270deg, #313131 0%, #000000 29.69%, #000000 52.6%, #000000 73.96%, #313131 99.98%);
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        @include before_circle;
+        &::before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        };
+    };
+    &__subtitle {
+        text-align: center;
+    };
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        column-gap: 13px;
+        row-gap: 13px;
+        padding: 60px 10px 0 10px;
+        &-title {
+            margin-top: 85px;
+            color: #000000;
+        };
+    };
+    &__item {
+        position: relative;
+        padding: 30px 30px 0 30px;
+        border: 2px solid $main-color;
+        background-color: #FFFFFF;
+    };
+    &__img {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        &-jquery {
+            top: 44px;
+        };
+    };
+    &__descr {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+    };
+    
+    &__percent {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        column-gap: 45px;
+        row-gap: 30px;
+        padding-top: 120px;
+        &-title {
+            display: block;
+            position: relative;
+            padding-left: 14px;
+            z-index: 2;
+            min-width: 169px;
+            @include before_circle;
+            &::before {
+                top: -7px;
+            };
+        };
+        &-item {
+            padding-top: 8px;
+        };
+    };
+    &__bar {
+        height: 14px;
+        width: 350px;
+        background-color: #E8E4DE;
+        margin-top: 20px;
+        border-radius: 4px;
+    };
+    &__progress {
+        height: 14px;
+        background: $main-color;
+        border-radius: 4px;
+        z-index: 3;
+    };
+    &__perc {
+        display: block;
+        max-width: 34px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+    };
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    };
+};
