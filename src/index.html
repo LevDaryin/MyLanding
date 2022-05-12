@@ -64,8 +64,8 @@
                 <ul class="menu__list">
                     <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
                     <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
-                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
                     <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
                     <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
                 </ul>
@@ -157,8 +157,8 @@
 
     <section class="resume" id="resume">
         <div class="container">
-            <h2 class="title title_fz16 resume__title">Опыт</h2>
-            <div class="title title_fz36 resume__subtitle">Чем я буду полезен</div>
+            <h2 class="title title_fz16 title__section-title">Опыт</h2>
+            <div class="title title_fz36 title__section-subtitle">Чем я буду полезен</div>
             <div class="divider"></div>
 
             <div class="resume__wrapper">
@@ -232,45 +232,59 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
-            <h2 class="title title_fz16 skills__title">Навыки</h2>
-            <div class="title title_fz36 skills__subtitle">Что я использую в работе</div>
+            <h2 class="title title_fz16 title__section-title">Навыки</h2>
+            <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
             <div class="divider"></div>
 
             <div class="skills__wrapper">
                 <div class="skills__item">
-                    <img src="icons/skills/html5.svg" alt="HTML5" class="skills__img">
+                    <div class="skills__img">
+                        <img src="icons/skills/html5.svg" alt="HTML5">
+                    </div>
                     <h4 class="title title_fz14 skills__wrapper-title">HTML5</h4>
                     <div class="skills__descr">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
                 </div>
                 <div class="skills__item">
-                    <img src="icons/skills/css3.svg" alt="CSS3" class="skills__img">
+                    <div class="skills__img">
+                        <img src="icons/skills/css3.svg" alt="CSS3">
+                    </div>
                     <h4 class="title title_fz14 skills__wrapper-title">CSS3</h4>
                     <div class="skills__descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
                 </div>
                 <div class="skills__item">
-                    <img src="icons/skills/js.svg" alt="JavaScript" class="skills__img">
+                    <div class="skills__img">
+                        <img src="icons/skills/js.svg" alt="JavaScript">
+                    </div>
                     <h4 class="title title_fz14 skills__wrapper-title">Java Script</h4>
                     <div class="skills__descr">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
                 </div>
                 <div class="skills__item">
-                    <img src="icons/skills/jquery.svg" alt="Jquery" class="skills__img skills__img-jquery">
+                    <div class="skills__img">
+                        <img src="icons/skills/jquery.svg" alt="Jquery">
+                    </div>
                     <h4 class="title title_fz14 skills__wrapper-title">Jquery</h4>
                     <div class="skills__descr">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
                 </div>
                 <div class="skills__item">
-                    <img src="icons/skills/react.svg" alt="React" class="skills__img">
+                    <div class="skills__img">
+                        <img src="icons/skills/react.svg" alt="React">
+                    </div>
                     <h4 class="title title_fz14 skills__wrapper-title">React</h4>
                     <div class="skills__descr">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</div>
                 </div>
                 <div class="skills__item">
-                    <img src="icons/skills/node.js.svg" alt="Node.js" class="skills__img">
+                    <div class="skills__img">
+                        <img src="icons/skills/node.js.svg" alt="Node.js">
+                    </div>
                     <h4 class="title title_fz14 skills__wrapper-title">Node.js</h4>
                     <div class="skills__descr">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</div>
                 </div>
                 <div class="skills__item">
-                    <img src="icons/skills/mongo.db.svg" alt="Mongo.db" class="skills__img">
+                    <div  class="skills__img">
+                        <img src="icons/skills/mongo.db.svg" alt="Mongo.db">
+                    </div>
                     <h4 class="title title_fz14 skills__wrapper-title">Mongo.db</h4>
                     <div class="skills__descr">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</div>
                 </div>
@@ -284,7 +298,7 @@
                     </div>
 
                     <div class="skills__bar">
-                        <div class="skills__progress" style="width: 100%;"></div>
+                        <div class="skills__progress" style="width: 100%"></div>
                     </div>
                 </div>
                 <div class="skills__percent-item">
@@ -294,7 +308,7 @@
                     </div>
 
                     <div class="skills__bar">
-                        <div class="skills__progress" style="width: 85%;"></div>
+                        <div class="skills__progress" style="width: 85%"></div>
                     </div>
                 </div>
                 <div class="skills__percent-item">
@@ -304,7 +318,7 @@
                     </div>
 
                     <div class="skills__bar">
-                        <div class="skills__progress" style="width: 90%;"></div>
+                        <div class="skills__progress" style="width: 90%"></div>
                     </div>
                 </div>
                 <div class="skills__percent-item">
@@ -314,7 +328,7 @@
                     </div>
 
                     <div class="skills__bar">
-                        <div class="skills__progress" style="width: 75%;"></div>
+                        <div class="skills__progress" style="width: 75%"></div>
                     </div>
                 </div>
                 <div class="skills__percent-item">
@@ -324,7 +338,7 @@
                     </div>
 
                     <div class="skills__bar">
-                        <div class="skills__progress" style="width: 90%;"></div>
+                        <div class="skills__progress" style="width: 90%"></div>
                     </div>
                 </div>
                 <div class="skills__percent-item">
@@ -334,9 +348,38 @@
                     </div>
 
                     <div class="skills__bar">
-                        <div class="skills__progress" style="width: 95%;"></div>
+                        <div class="skills__progress" style="width: 95%"></div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="title title_fz16 title__section-title">Навыки</h2>
+            <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
+            <div class="divider"></div>
+
+            <div class="portfolio__wrapper">
+                <a href="#" class="portfolio__item">
+                    <img src="img/works/uber.jpg" alt="uber">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/works/pulse.jpg" alt="pulse">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/works/bread.jpg" alt="test">
+                </a>
+                <a href="#" class="portfolio__item vertical">
+                    <img src="img/works/plans.jpg" alt="test">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/works/ipad.jpg" alt="test">
+                </a>
+                <a href="#" class="portfolio__item horizontal">
+                    <img src="img/works/mac.jpg" alt="test">
+                </a>
             </div>
         </div>
     </section>

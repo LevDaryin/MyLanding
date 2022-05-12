@@ -1,29 +1,18 @@
 .skills {
     background: linear-gradient(270deg, #313131 0%, #000000 29.69%, #000000 52.6%, #000000 73.96%, #313131 99.98%);
     padding-top: 120px;
-    &__title {
-        position: relative;
-        text-align: center;
-        z-index: 2;
-        @include before_circle;
-        &::before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        };
-    };
-    &__subtitle {
-        text-align: center;
     };
     &__wrapper {
+        margin-top: 60px;
         display: grid;
         grid-template-columns: repeat(4, 270px);
-        grid-template-rows: repeat(2, 270px);
+        grid-template-rows: repeat(2, minmax(270px, auto));
         column-gap: 13px;
         row-gap: 13px;
-        padding: 60px 10px 0 10px;
+        padding: 10px 10px 0 10px;
         &-title {
-            margin-top: 85px;
+            margin-top: 20px;
+            margin-bottom: 0;
             color: #000000;
         };
     };
@@ -34,14 +23,13 @@
         background-color: #FFFFFF;
     };
     &__img {
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        &-jquery {
-            top: 44px;
-        };
+        display: flex;
+        align-items: center;
+        min-height: 65px
     };
     &__descr {
+        margin-top: 15px;
+        margin-bottom: 0;
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;

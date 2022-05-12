@@ -1,20 +1,6 @@
 .resume {
     padding-top: 120px;
     background: linear-gradient(270deg, #313131 0%, #000000 29.69%, #000000 52.6%, #000000 73.96%, #313131 99.98%);
-    &__title {
-        position: relative;
-        text-align: center;
-        z-index: 2;
-        @include before_circle;
-        &::before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        };
-    };
-    &__subtitle {
-        text-align: center;
-    };
     &__wrapper {
         padding: 60px 65px 0 65px;
         display: grid;
