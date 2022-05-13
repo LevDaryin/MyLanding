@@ -15,11 +15,15 @@
         background-color: #FFFFFF;
     };
     &__link {
+        transition: all 0.3s;
         img {
             height: 20px;
             width: 20px;
             color: #FFFFFF;
         };
+        &:hover {
+            transform:scale(1.2);
+        }; 
     };
     &__text {
         height: 150px;

@@ -1,7 +1,6 @@
 .skills {
     background: linear-gradient(270deg, #313131 0%, #000000 29.69%, #000000 52.6%, #000000 73.96%, #313131 99.98%);
     padding-top: 120px;
-    };
     &__wrapper {
         margin-top: 60px;
         display: grid;
@@ -21,6 +20,10 @@
         padding: 30px 30px 0 30px;
         border: 2px solid $main-color;
         background-color: #FFFFFF;
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.05);
+        };
     };
     &__img {
         display: flex;

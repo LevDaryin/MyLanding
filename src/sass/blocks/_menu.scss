@@ -49,6 +49,9 @@
         top: 25px;
         right: 25px;
         cursor: pointer;
+        &:hover {
+            transform: translateY(-2px);
+        };
     };  
     &__list {
         list-style-type: none;
@@ -79,6 +82,7 @@
         a {
             color: #FFFFFF;
             text-decoration: none;
+            
         };
     };
     &__social {
@@ -90,7 +94,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        a {
+            transition: all 0.3s;
+            &:hover {
+                transform: translateY(-4px) scale(1.1);
+            };  
+        };
     };
     &__overlay {
         position: fixed;
