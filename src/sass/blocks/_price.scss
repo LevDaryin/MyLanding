@@ -1,5 +1,5 @@
 .price {
-    background: linear-gradient(270deg, #313131 0%, #000000 29.69%, #000000 52.6%, #000000 73.96%, #313131 99.98%);
+    background: $bgc;
     padding-top: 66px;
     &__divider {
         margin: 34px auto 0 auto;
